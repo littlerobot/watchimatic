@@ -34,18 +34,8 @@ composer:
 
 # post deploy actions
 post-deploy:
-
-    # run post deploy PHP script. path is below htdocs/ and optional command line
-    #   args can be added in YAML array notification
-#    script: some-script.php
-#    args:
-#        - arg1
-#        - arg2
-
-    # alternatively/additionally an URL can be specified which is called after
-    #   deployment
-    #url: http://domain.tld/callback
-
-    # token which will be send as request header `X-Frbit-Token` to verify that
-    #   the request originated from this post-deploy call (defaults to "unset")
-    #token: your-own-token
+    script: app/console
+    args:
+        - 'assetic:dump'
+        - '--env=prod'
+        - '--no-debug'
