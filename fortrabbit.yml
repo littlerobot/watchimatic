@@ -4,7 +4,7 @@
 version: 1
 
 # default strategy is "nodelete"
-strategy: fullsync
+strategy: nodelete
 
 # Excludes work only with the "fullsync" strategy. You can either use YAML array
 #   notification or an rsync formatted exclusion file. All excludes are below the
