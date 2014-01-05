@@ -1,0 +1,3 @@
+little_robot_watchimatic_static:
+    resource: "@LittleRobotWatchimaticStaticBundle/Resources/config/routing.yml"
+    prefix:   /

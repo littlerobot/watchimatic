@@ -1,0 +1,5 @@
+watch_home:
+    path: /
+    defaults:
+        _controller:  FrameworkBundle:Template:template
+        template:     'LittleRobotWatchimaticStaticBundle::home.html.twig'
