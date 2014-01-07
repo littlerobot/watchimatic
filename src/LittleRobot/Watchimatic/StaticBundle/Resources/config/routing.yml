@@ -3,3 +3,15 @@ watch_home:
     defaults:
         _controller:  FrameworkBundle:Template:template
         template:     'LittleRobotWatchimaticStaticBundle::home.html.twig'
+
+watch_tv_trending:
+    path: /tv/trending
+    defaults:
+        _controller:  FrameworkBundle:Template:template
+        template:     'LittleRobotWatchimaticStaticBundle::tv.html.twig'
+
+watch_movies_trending:
+    path: /movies/trending
+    defaults:
+        _controller:  FrameworkBundle:Template:template
+        template:     'LittleRobotWatchimaticStaticBundle::movies.html.twig'

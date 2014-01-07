@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+{% block title %}Trending TV - {{ parent() }}{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="page-header">
+            <h1>Trending TV</h1>
+        </div>
+        {% for i in range(1, 5) %}
+        <div class="row">
+            <div class="col-md-2">
+                <img src="http://placehold.it/150x220" class="img-responsive" />
+            </div>
+            <div class="col-md-10">
+                <h2>Title</h2>
+                <p>Fugit scribentur voluptatibus eum ne. Nam ut eligendi hendrerit, nostrum dignissim vis in. Id esse nominavi quo, possit deleniti id sed. Semper doctus alterum et usu. Vim ea porro facer, pri vocent propriae ea, clita invenire intellegat eu mea. Meis prima adolescens vis in, eam cibo deseruisse an, maiorum suavitate cu pro.</p>
+                <ul class="list-unstyled">
+                    <li><span class="glyphicon glyphicon-calendar"></span> 2000</li>
+                    <li><span class="glyphicon glyphicon-time"></span> 1 hour, 32 minutes</li>
+                    <li><span class="glyphicon glyphicon-tag"></span> <span class="label label-default">first</span> <span class="label label-default">second</span> <span class="label label-default">third</span></li>
+                    <li><span class="glyphicon glyphicon-heart"></span> 93%</li>
+                    <li><span class="glyphicon glyphicon-globe"></span>
+                        <a href="#">trakt</a> &middot;
+                        <a href="#">IMDB</a> &middot;
+                        <a href="#">TheTVDB</a> &middot;
+                        <a href="#">TVRage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
