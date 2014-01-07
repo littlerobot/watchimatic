@@ -35,7 +35,7 @@ composer:
 # post deploy actions
 post-deploy:
     script: app/console
-    args:
-        - 'assetic:dump'
-        - '--env=prod'
-        - '--no-debug'
+    args: ['cache:clear', '--env=prod', '--no-debug']
+
+    script: app/console
+    args: ['assetic:dump', '--env=prod', '--no-debug']
