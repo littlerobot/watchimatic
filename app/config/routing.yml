@@ -1,3 +1,7 @@
+little_robot_watchimatic_recommendation:
+    resource: "@LittleRobotWatchimaticRecommendationBundle/Resources/config/routing.yml"
+    prefix:   /
+
 little_robot_watchimatic_static:
     resource: "@LittleRobotWatchimaticStaticBundle/Resources/config/routing.yml"
     prefix:   /

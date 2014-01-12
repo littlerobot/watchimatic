@@ -32,5 +32,11 @@ monolog:
 assetic:
     use_controller: true
 
+
+little_robot_trakt_api_wrapper:
+    username: StuBez
+    password: vH3&$G09*0ffHFELw*29pafRp
+    api_key:  df423f7352dc8b2117778d8a1e791304
+
 #swiftmailer:
 #    delivery_address: me@example.com

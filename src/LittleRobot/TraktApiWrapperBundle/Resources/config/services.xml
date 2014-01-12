@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <!--
+    <parameters>
+        <parameter key="little_robot_trakt_api_wrapper.example.class">LittleRobot\TraktApiWrapperBundle\Example</parameter>
+    </parameters>
+
+    <services>
+        <service id="little_robot_trakt_api_wrapper.example" class="%little_robot_trakt_api_wrapper.example.class%">
+            <argument type="service" id="service_id" />
+            <argument>plain_value</argument>
+            <argument>%parameter_name%</argument>
+        </service>
+    </services>
+    -->
+    <parameters>
+        <parameter key="little_robot_trakt_api_wrapper.username" />
+        <parameter key="little_robot_trakt_api_wrapper.password" />
+        <parameter key="little_robot_trakt_api_wrapper.api_key" />
+    </parameters>
+
+    <services>
+        <service id="little_robot_trakt_api_wrapper.client"
+                 class="Wubs\Trakt\Trakt"
+                 factory-class="Wubs\Trakt\Trakt"
+                 factory-method="setApiKey"
+                 >
+            <argument>%little_robot_trakt_api_wrapper.api_key%</argument>
+        </service>
+    </services>
+</container>

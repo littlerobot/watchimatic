@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2c0295f7b959d7cc894ee1a78d4f3b41",
+    "hash": "a6798a56a0c24643a235fcdb348a91c5",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1532,6 +1532,42 @@
                 "templating"
             ],
             "time": "2013-12-06 07:47:10"
+        },
+        {
+            "name": "wubs/trakt",
+            "version": "dev-wrap-classes",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/megawubs/trakt-api-wrapper.git",
+                "reference": "2c80c279f3f9797e3979ff91e5a9ae1842795b70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/megawubs/trakt-api-wrapper/zipball/2c80c279f3f9797e3979ff91e5a9ae1842795b70",
+                "reference": "2c80c279f3f9797e3979ff91e5a9ae1842795b70",
+                "shasum": ""
+            },
+            "require-dev": {
+                "wubs/json-settings": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Wubs": "src/"
+                },
+                "classmap": [
+                    "tests"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "megawubs",
+                    "email": "bwubs@me.com"
+                }
+            ],
+            "description": "Trakt api wrapper for php",
+            "time": "2013-10-20 20:20:34"
         }
     ],
     "packages-dev": [
@@ -1541,9 +1577,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "wubs/trakt": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },

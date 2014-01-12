@@ -17,6 +17,8 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new LittleRobot\Watchimatic\StaticBundle\LittleRobotWatchimaticStaticBundle(),
+            new LittleRobot\Watchimatic\RecommendationBundle\LittleRobotWatchimaticRecommendationBundle(),
+            new LittleRobot\TraktApiWrapperBundle\LittleRobotTraktApiWrapperBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

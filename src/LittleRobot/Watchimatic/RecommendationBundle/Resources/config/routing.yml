@@ -1,0 +1,10 @@
+watch_tv_recommended:
+    path: /tv/recommended
+    defaults:
+        _controller:  LittleRobotWatchimaticRecommendationBundle:Default:recommend
+
+watch_movies_recommended:
+    path: /movies/recommended
+    defaults:
+        _controller:  FrameworkBundle:Template:template
+        template:     'LittleRobotWatchimaticStaticBundle::movies.html.twig'
